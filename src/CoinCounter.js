@@ -11,4 +11,8 @@ export class CoinCounterUSD {
   static GetChangeDistribution(cents) {
     return { pennies: cents };
   }
+
+  static GetChangeInPennies(cents) {
+    return { pennies: cents };
+  }
 }

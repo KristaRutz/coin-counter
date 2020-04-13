@@ -20,4 +20,12 @@ describe("CoinCounterUSD", () => {
   test("should return '5 pennies' for 5 cents of change", () => {
     expect(CoinCounterUSD.GetChangeDistribution(5)).toEqual({ pennies: 5 });
   });
+
+  test("should return int '1' for 1 cent of change", () => {
+    expect(CoinCounterUSD.GetChangeInPennies(1)).toEqual(1);
+  });
+
+  test("should return int 'x' for x cents of change", () => {
+    expect(CoinCounterUSD.GetChangeInPennies(452)).toEqual(452);
+  });
 });
