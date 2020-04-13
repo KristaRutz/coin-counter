@@ -1,4 +1,4 @@
-import { CoinCounter } from "./../src/CoinCounter.js";
+import { CoinCounterUSD } from "./../src/CoinCounter.js";
 
 // describe('Triangle', () => {
 
@@ -10,10 +10,10 @@ import { CoinCounter } from "./../src/CoinCounter.js";
 //   });
 // });
 
-describe("CoinCounter", () => {
+describe("CoinCounterUSD", () => {
   test("should pass an empty test", () => {});
 
   test("should return '1 penny' for change of 1 cent", () => {
-    expect(CoinCounter.GetChangeDistribution(1)).toEqual({ pennies: 1 });
+    expect(CoinCounterUSD.GetChangeDistribution(1)).toEqual({ pennies: 1 });
   });
 });
