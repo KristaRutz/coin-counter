@@ -2,7 +2,7 @@ export class CoinCounter {
   constructor(cents) {
     this.cents = cents;
   }
-  GetChangeDistribution(cents) {
+  static GetChangeDistribution(cents) {
     return 0;
   }
 }
