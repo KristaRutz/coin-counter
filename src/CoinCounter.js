@@ -13,6 +13,26 @@ export class CoinCounterUSD {
   }
 
   static GetChangeInPennies(cents) {
-    return { pennies: cents };
+    return cents;
+  }
+
+  static GetChangeInNickels(cents) {
+    return Math.floor(cents / 5);
+  }
+
+  static GetChangeInDimes(cents) {
+    return Math.floor(cents / 10);
+  }
+
+  static GetChangeInQuarters(cents) {
+    return Math.floor(cents / 25);
+  }
+
+  static GetChangeInHalfDollars(cents) {
+    return Math.floor(cents / 50);
+  }
+
+  static GetChangeInDollars(cents) {
+    return Math.floor(cents / 100);
   }
 }
