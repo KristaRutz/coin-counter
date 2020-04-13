@@ -13,7 +13,11 @@ import { CoinCounterUSD } from "./../src/CoinCounter.js";
 describe("CoinCounterUSD", () => {
   test("should pass an empty test", () => {});
 
-  test("should return '1 penny' for change of 1 cent", () => {
+  test("should return '1 penny' for 1 cent of change", () => {
     expect(CoinCounterUSD.GetChangeDistribution(1)).toEqual({ pennies: 1 });
+  });
+
+  test("should return '5 pennies' for 5 cents of change", () => {
+    expect(CoinCounterUSD.GetChangeDistribution(5)).toEqual({ pennies: 5 });
   });
 });
